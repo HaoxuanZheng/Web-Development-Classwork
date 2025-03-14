@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 32 Practical</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      #massTable{
+        margin:0 auto;
+        border-collapse:collapse;
+      }
+      th,td{
+        border: 1px solid black;
+        padding:5px;
+      }
+      th{
+        background-color:black;
+        color:white;
+      }
+      .subtopic{
+        font-style:italic;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="banner" class="container center">
+      <div style="text-align:center">
+        <h1>Rock Paper Scissor</h1>
+      </div>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This practical challenges students to use the logical && operator in conjunction with random numbers to create a Rock Paper Scissor 
+          game.  In this game both the computer and the user when select between Rock Paper and Scissor. Below are the rules for winning.
+          </p>
+        <ul>
+          <li>Scissor beats Paper</li>
+          <li>Paper beats Rock</li>
+          <li>Rock beats Scissor</li>
+        </ul>
+        After each game, display each players choice as an image and also state who won.
+       </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h3> Choose: </h3>
+        <select id="player">
+          <option disabled>Select option</option>
+          <option value="1">Scissor</option>
+          <option value="2">Paper</option>
+          <option value="3">Rock</option>
+        </select>
+
+        <input type="button" onclick="game()" value="Choose">
+        <div id="display"></div>
+        <div id="output"></div>
+      </div>
+     
+    </div>
+    <div id="footer" class="container center">
+      <h3>Lesson 32 Practical</h3>
+    </div> 
+  </body>
+</html>
+
+
